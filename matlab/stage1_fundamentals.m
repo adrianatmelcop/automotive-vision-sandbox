@@ -1,10 +1,10 @@
 %% Stage 1 - Fundamentals
 clear; close all; clc;
 
-scriptDir   = fileparts(mfilename("fullpath"));
+scriptDir = fileparts(which("stage1_fundamentals"));
 projectRoot = fileparts(scriptDir);
 
-videoFile  = fullfile(projectRoot, "data", "solidWhiteRight.mp4");
+videoFile = fullfile(projectRoot, "data", "solidWhiteRight.mp4");
 resultsDir = fullfile(projectRoot, "results", "stage1");
 
 if ~isfolder(resultsDir)
